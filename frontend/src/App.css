@@ -1,0 +1,608 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fc;
+  color: #17172b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: white;
+  border-bottom: 1px solid #e8e8ef;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo span {
+  margin-left: 6px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #55556a;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #6c4df6;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #f7f5ff, #ffffff);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.tag {
+  color: #6c4df6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #6c4df6;
+}
+
+.subtitle {
+  color: #66667a;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.primary-btn,
+.camera-btn,
+.song-card button,
+.detect-btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #6c4df6;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(108, 77, 246, 0.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  background: #5838e8;
+}
+
+.primary-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   CAMERA CARD
+========================= */
+
+.camera-card {
+  width: 380px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e7e5f3;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(30, 25, 80, 0.1);
+}
+
+.camera-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.camera-card h2 {
+  margin-bottom: 8px;
+}
+
+.camera-card p {
+  color: #77778b;
+  margin-bottom: 20px;
+}
+
+/* CAMERA AREA */
+
+.camera-placeholder {
+  height: 220px;
+  width: 100%;
+  border-radius: 15px;
+  background: #f0edff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 2px dashed #bcb2f5;
+  overflow: hidden;
+  position: relative;
+}
+
+.camera-placeholder span {
+  font-size: 80px;
+}
+
+/* LIVE CAMERA */
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 13px;
+  display: block;
+  transform: scaleX(-1);
+}
+
+/* CAMERA OFF */
+
+.camera-message {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.camera-message span {
+  font-size: 70px;
+}
+
+.camera-message small {
+  color: #77778b;
+  font-size: 14px;
+}
+
+/* CAMERA BUTTON */
+
+.camera-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 9px;
+  background: #17172b;
+  color: white;
+  font-size: 15px;
+}
+
+.camera-btn:hover {
+  background: #6c4df6;
+}
+
+.camera-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* DETECT BUTTON */
+
+.detect-btn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 13px;
+  border-radius: 9px;
+  background: #eeeeef;
+  color: #17172b;
+  font-size: 15px;
+}
+
+.detect-btn:hover {
+  background: #dedde4;
+}
+
+.detect-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.mood-section,
+.music-section,
+.how-section {
+  padding: 80px 8%;
+}
+
+.section-label {
+  color: #6c4df6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   MOOD
+========================= */
+
+.mood-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  border: 1px solid #e8e7f1;
+  border-radius: 18px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 30px rgba(30, 25, 80, 0.06);
+}
+
+.mood-emoji {
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+  background: #f0edff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+}
+
+.mood-info {
+  flex: 1;
+}
+
+.mood-info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.mood-info p {
+  color: #77778b;
+}
+
+.confidence {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.confidence strong {
+  color: #6c4df6;
+  font-size: 25px;
+}
+
+.confidence span {
+  color: #88889a;
+  font-size: 13px;
+}
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-section {
+  background: #f1efff;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.song-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(30, 25, 80, 0.07);
+  transition: 0.3s;
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+}
+
+.album {
+  height: 180px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ded8ff, #f7dfff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.song-card h3 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.song-card p {
+  color: #77778b;
+  margin-bottom: 18px;
+}
+
+.song-card button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #6c4df6;
+  color: white;
+}
+
+.song-card button:hover {
+  background: #5838e8;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+  text-align: center;
+}
+
+.how-section h2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.steps > div {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  border: 1px solid #e8e7f1;
+  box-shadow: 0 10px 30px rgba(30, 25, 80, 0.04);
+}
+
+.steps span {
+  color: #6c4df6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.steps h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+.steps p {
+  color: #77778b;
+  line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #17172b;
+  color: white;
+  padding: 40px 8%;
+}
+
+footer div {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #aaaabd;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-text {
+    max-width: 650px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .camera-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .music-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-card {
+    flex-wrap: wrap;
+  }
+
+  .confidence {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 50px 5%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .camera-card {
+    padding: 22px;
+  }
+
+  .camera-placeholder {
+    height: 220px;
+  }
+
+  .mood-section,
+  .music-section,
+  .how-section {
+    padding: 55px 5%;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .how-section h2 {
+    font-size: 30px;
+  }
+
+  .mood-card {
+    padding: 20px;
+  }
+}
+.camera-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.camera-message span {
+  font-size: 80px;
+}
+
+.camera-message small {
+  color: #77778b;
+  font-size: 13px;
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transform: scaleX(-1);
+  display: block;
+}
+
+.camera-error {
+  color: #d93025;
+  font-size: 13px !important;
+  margin: 10px 0 !important;
+}
+
+.detect-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #6c4df6;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.detect-btn:hover {
+  background: #5838e8;
+}
+
+.detect-btn:disabled,
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
