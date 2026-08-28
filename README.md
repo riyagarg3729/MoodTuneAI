@@ -1,1268 +1,534 @@
-<h1 align="center">🎭 MoodTune AI 🎧</h1>
-
-
-
 <p align="center">
-
-&#x20; <strong>AI-Powered Mood-Based Music Recommendation System</strong>
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7C4DFF&height=240&section=header&text=MoodTune%20AI&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
 </p>
 
-
-
 <p align="center">
-
-&#x20; <i>Detect your mood. Discover your music. Enjoy the moment.</i>
-
+  <strong>🎭 Your Mood. Your Music. 🎧</strong>
 </p>
 
-
-
 <p align="center">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  AI-powered facial emotion detection meets personalized Bollywood & Haryanvi music recommendations.
 </p>
 
-
-
 <p align="center">
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <a href="https://github.com/riyagarg3729/MoodTuneAI">
+    <img src="https://img.shields.io/badge/GitHub-MoodTune%20AI-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Python-Backend-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-REST%20API-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Emotion%20Detection-FF6F00?style=for-the-badge" alt="AI">
+  <img src="https://img.shields.io/badge/280%2B-Songs-FF4081?style=for-the-badge" alt="Songs">
+  <img src="https://img.shields.io/badge/Bollywood-%26%20Haryanvi-E91E63?style=for-the-badge" alt="Music">
+  <img src="https://img.shields.io/badge/Status-Working-22C55E?style=for-the-badge" alt="Status">
+</p>
 
+🌟 Project Overview
 
-📌 Table of Contents
+MoodTune AI is an AI-powered full-stack web application that connects facial emotion recognition with personalized music recommendation.
 
+Instead of asking the user to manually choose a playlist, MoodTune AI uses a browser camera to capture facial expressions, analyzes the emotional state through an AI/computer-vision pipeline, and dynamically recommends music based on the detected mood.
 
+🎯 The Core Idea
 
-About The Project
+🎭 Detect the Mood → 🧠 Understand the Emotion → 🎵 Recommend the Music
 
-
-
-Problem Statement
-
-
-
-Core Concept
-
-
-
-Key Features
-
-
-
-Supported Moods
-
-
-
-AI \& Computer Vision
-
-
-
-How It Works
-
-
-
-System Architecture
-
-
-
-Project Structure
-
-
-
-Music Recommendation Engine
-
-
-
-Music Library
-
-
-
-Screenshots
-
-
-
-Demo
-
-
-
-Technology Stack
-
-
-
-API Documentation
-
-
-
-Installation
-
-
-
-Running The Application
-
-
-
-Configuration
-
-
-
-Deployment
-
-
-
-Privacy
-
-
-
-Security
-
-
-
-Troubleshooting
-
-
-
-Future Enhancements
-
-
-
-Project Highlights
-
-
-
-Resume-Friendly Highlights
-
-
-
-Learning Outcomes
-
-
-
-Challenges Solved
-
-
-
-Contributing
-
-
-
-Support
-
-
-
-Author
-
-
-
-License
-
-
-
-🌟 About The Project
-
-
-
-MoodTune AI is an AI-powered full-stack web application that combines Artificial Intelligence, Facial Emotion Recognition, Computer Vision, React, Python, Flask, and a mood-based music recommendation engine.
-
-
-
-The core idea is simple:
-
-
-
-🎭 Your Mood → 🧠 AI Detection → 🎵 Personalized Music
-
-
-
-Instead of manually searching for music or selecting a playlist, users can allow MoodTune AI to access their camera and analyze their facial expression. The application processes the captured image through an AI-powered computer-vision pipeline, determines an emotional category, and then recommends songs associated with that mood.
-
-
-
-The project focuses on Indian music, particularly Bollywood and Haryanvi songs, making the recommendation experience more relevant to the target audience.
-
-
-
-MoodTune AI demonstrates how AI can be combined with a modern web interface to create an interactive and personalized user experience.
-
-
-
-🎯 Problem Statement
-
-
-
-Music discovery is traditionally based on manual search, genre selection, playlists, or listening history.
-
-
-
-A user who wants music matching their current emotional state may still need to:
-
-
-
-Search for songs manually
-
-
-
-Select a playlist
-
-
-
-Choose a genre
-
-
-
-Decide what type of music fits their mood
-
-
-
-Browse through multiple recommendations
-
-
-
-This creates unnecessary interaction when the user's primary goal is simply to find suitable music.
-
-
-
-💡 Proposed Solution
-
-
-
-MoodTune AI introduces an emotion-aware interaction model:
-
-
-
-Facial Expression
-
-&#x20;      ↓
-
-AI Emotion Detection
-
-&#x20;      ↓
-
-Mood Classification
-
-&#x20;      ↓
-
-Mood-to-Music Mapping
-
-&#x20;      ↓
-
-Personalized Recommendations
-
-
-
-The application attempts to make music discovery more interactive by using facial-expression information as an input for recommendations.
-
-
-
-💡 Core Concept
-
-
-
-MoodTune AI follows an Emotion → Recommendation workflow.
-
-
-
-The user does not have to manually select a mood.
-
-
-
-Instead:
-
-
+The application is designed around a simple and engaging user experience:
 
 📷 Camera
-
-&#x20;   ↓
-
+   ↓
 👤 Face Capture
-
-&#x20;   ↓
-
-🧠 AI Analysis
-
-&#x20;   ↓
-
-🎭 Emotion Detection
-
-&#x20;   ↓
-
+   ↓
+🧠 AI Emotion Analysis
+   ↓
+🎭 Mood Detection
+   ↓
 📊 Confidence Score
-
-&#x20;   ↓
-
+   ↓
 🎵 Mood-Based Playlist
-
-&#x20;   ↓
-
-🎧 Recommended Songs
-
-&#x20;   ↓
-
+   ↓
+🎧 Music Recommendations
+   ↓
 ▶️ Search / Play
 
+💡 Why MoodTune AI?
 
+Most music applications depend heavily on manual actions such as:
 
-This creates a simple user journey:
+Searching for a song
 
+Choosing a genre
 
+Selecting a playlist
 
-Show your expression → let AI understand the mood → discover music.
+Creating a personal queue
 
+Remembering what to play based on mood
 
+MoodTune AI introduces an additional interaction layer:
+
+Traditional Approach
+User → Search → Select → Play
+
+MoodTune AI
+User → Camera → AI → Mood → Playlist → Play
+
+The goal is to make music discovery more interactive, personalized, and emotion-aware.
 
 ✨ Key Features
 
+Feature
 
+What it Does
 
-🎭 1. AI-Based Mood Detection
+🎭 AI Mood Detection
 
+Detects emotional state from facial expression
 
+📷 Camera Integration
 
-MoodTune AI uses facial-expression recognition to identify the user's emotional category.
+Captures facial input directly from the browser
 
+🧠 Computer Vision
 
+Processes facial information using AI models
 
-The detected mood is presented directly in the application interface.
+📊 Confidence Score
 
+Shows prediction confidence
 
+🎵 Dynamic Playlist
 
-📷 2. Camera-Based Interaction
+Selects songs according to detected mood
 
+🇮🇳 Bollywood Music
 
+Hindi songs across different moods
 
-The application provides a browser-based camera interface.
+🪕 Haryanvi Music
 
+Regional Indian music recommendations
 
+🎧 280+ Songs
 
-Users can:
+Large mood-based music collection
 
+▶️ Music Search
 
+Quickly search recommended songs
 
-Start the camera
+⚡ Responsive UI
 
-
-
-Allow camera permission
-
-
-
-Position their face
-
-
-
-Capture an image
-
-
-
-Analyze their expression
-
-
-
-Detect their mood
-
-
-
-Stop the camera
-
-
-
-Camera access is controlled through the browser's permission system.
-
-
-
-🧠 3. Facial Emotion Recognition
-
-
-
-The backend processes the captured facial image using computer-vision and model assets.
-
-
-
-The overall pipeline is:
-
-
-
-Input Image
-
-&#x20;    ↓
-
-Face Detection
-
-&#x20;    ↓
-
-Face Processing
-
-&#x20;    ↓
-
-Expression Recognition
-
-&#x20;    ↓
-
-Emotion Classification
-
-
-
-📊 4. Confidence Score
-
-
-
-The detected mood can be accompanied by a confidence score.
-
-
-
-Example:
-
-
-
-CURRENT MOOD
-
-
-
-😊 HAPPY
-
-
-
-Emotion detected by AI
-
-
-
-92.40%
-
-Confidence
-
-
-
-This gives the user additional context about the AI prediction.
-
-
-
-🎵 5. Automatic Playlist Selection
-
-
-
-After detecting the mood, MoodTune AI selects the corresponding music category.
-
-
-
-Example:
-
-
-
-😊 HAPPY
-
-&#x20;  ↓
-
-Energetic / Feel-Good Songs
-
-
-
-😢 SAD
-
-&#x20;  ↓
-
-Emotional / Comforting Songs
-
-
-
-😠 ANGRY
-
-&#x20;  ↓
-
-Powerful / High-Energy Songs
-
-
-
-😐 NEUTRAL
-
-&#x20;  ↓
-
-Chill / Balanced Songs
-
-
-
-🇮🇳 6. Bollywood + Haryanvi Music
-
-
-
-MoodTune AI is designed around Indian music.
-
-
-
-The project includes:
-
-
-
-🎬 Bollywood
-
-
-
-Hindi songs across different emotional categories.
-
-
-
-🪕 Haryanvi
-
-
-
-Haryanvi songs for users who prefer regional Indian music.
-
-
-
-🎧 7. 280+ Songs
-
-
-
-The project contains a music library of 280+ songs, organized around the supported moods.
-
-
-
-This provides a larger variety of recommendations instead of relying on only a few hard-coded songs.
-
-
-
-▶️ 8. One-Click Music Search
-
-
-
-Recommended songs can be opened through an external music search action.
-
-
-
-This provides a simple path from:
-
-
-
-Mood
-
-&#x20;↓
-
-Recommendation
-
-&#x20;↓
-
-Song
-
-&#x20;↓
-
-Listen
-
-
+Modern and interactive React interface
 
 🎭 Supported Moods
 
-
-
-MoodTune AI currently supports seven emotional categories:
-
-
+MoodTune AI supports seven emotional categories:
 
 Mood
 
-
-
 Emoji
 
-
-
-Recommendation Style
-
-
+Playlist Style
 
 Happy
-
-
 
 😊
 
-
-
-Energetic \& Feel-Good
-
-
+Energetic & Feel-Good
 
 Sad
-
-
 
 😢
 
-
-
-Emotional \& Comforting
-
-
+Emotional & Comforting
 
 Angry
-
-
 
 😠
 
-
-
-Powerful \& High-Energy
-
-
+Powerful & High-Energy
 
 Neutral
-
-
 
 😐
 
-
-
-Chill \& Balanced
-
-
+Chill & Balanced
 
 Surprised
-
-
 
 😲
 
-
-
-Fun \& Exciting
-
-
+Fun & Exciting
 
 Anxious
-
-
 
 😟
 
-
-
-Calm \& Relaxing
-
-
+Calm & Relaxing
 
 Uncomfortable
-
-
 
 😕
 
+Soothing & Positive
 
+🧠 AI & Computer Vision
 
-Soothing \& Positive
+The project uses a computer-vision based pipeline for facial analysis.
 
-
-
-🧠 AI \& Computer Vision
-
-
-
-The backend contains ONNX model assets inside:
-
-
+Model assets are stored in:
 
 backend/models/
 
+Included Model Files
 
+face_detection_yunet_2023mar.onnx
 
-Current model files include:
+face_recognition_sface_2021dec.onnx
 
+facial_expression_recognition_mobilefacenet_2022july.onnx
 
+🔬 AI Processing Pipeline
 
-face\_detection\_yunet\_2023mar.onnx
-
-face\_recognition\_sface\_2021dec.onnx
-
-facial\_expression\_recognition\_mobilefacenet\_2022july.onnx
-
-
-
-These model assets are part of the facial analysis pipeline.
-
-
-
-AI Processing Flow
-
-
-
-&#x20;               IMAGE
-
-&#x20;                 │
-
-&#x20;                 ▼
-
-&#x20;       ┌──────────────────┐
-
-&#x20;       │  Face Detection  │
-
-&#x20;       └────────┬─────────┘
-
-&#x20;                │
-
-&#x20;                ▼
-
-&#x20;       ┌──────────────────┐
-
-&#x20;       │ Face Processing  │
-
-&#x20;       └────────┬─────────┘
-
-&#x20;                │
-
-&#x20;                ▼
-
-&#x20;       ┌──────────────────┐
-
-&#x20;       │    Expression    │
-
-&#x20;       │    Recognition   │
-
-&#x20;       └────────┬─────────┘
-
-&#x20;                │
-
-&#x20;                ▼
-
-&#x20;       ┌──────────────────┐
-
-&#x20;       │ Emotion / Mood   │
-
-&#x20;       │ Classification   │
-
-&#x20;       └────────┬─────────┘
-
-&#x20;                │
-
-&#x20;                ▼
-
-&#x20;         Confidence Score
-
-&#x20;                │
-
-&#x20;                ▼
-
-&#x20;      Music Recommendation
-
-
+                📷 INPUT IMAGE
+                       │
+                       ▼
+             ┌───────────────────┐
+             │   Face Detection   │
+             └─────────┬─────────┘
+                       │
+                       ▼
+             ┌───────────────────┐
+             │  Face Processing  │
+             └─────────┬─────────┘
+                       │
+                       ▼
+             ┌───────────────────┐
+             │ Expression Analysis│
+             └─────────┬─────────┘
+                       │
+                       ▼
+             ┌───────────────────┐
+             │ Emotion Detection │
+             └─────────┬─────────┘
+                       │
+                       ▼
+                📊 CONFIDENCE
+                       │
+                       ▼
+                🎭 DETECTED MOOD
 
 🔄 How MoodTune AI Works
 
-
-
-Step 1 — Open the Application
-
-
+01 — Open the Application
 
 The user opens MoodTune AI in a supported browser.
 
+02 — Start Camera
 
+The user clicks Start Camera and grants browser permission.
 
-Step 2 — Start Camera
+📷 Start Camera
+       ↓
+🔐 Camera Permission
+       ↓
+🎥 Live Camera Feed
 
+03 — Capture Facial Expression
 
+The application captures the current camera frame and prepares the image for analysis.
 
-The user starts the camera feature and grants permission when requested.
+04 — Send Image to Backend
 
-
-
-Step 3 — Capture Facial Expression
-
-
-
-The application captures an image containing the user's face.
-
-
-
-Step 4 — Send Image to Backend
-
-
-
-The frontend sends the captured image to the Flask REST API.
-
-
+The React frontend sends the captured image to the Flask backend through an HTTP request.
 
 React Frontend
-
-&#x20;     │
-
-&#x20;     │ HTTP POST
-
-&#x20;     ▼
-
+      │
+      │ POST Request
+      ▼
 Flask Backend
 
+05 — AI Emotion Analysis
 
+The backend processes the image through the facial-analysis pipeline.
 
-Step 5 — Process Image
+Image
+ ↓
+Face Detection
+ ↓
+Expression Analysis
+ ↓
+Emotion Classification
 
+06 — Detect Mood
 
-
-The backend processes the image through the computer-vision and emotion-recognition pipeline.
-
-
-
-Step 6 — Detect Mood
-
-
-
-The system returns the detected emotional category and confidence information.
-
-
+The backend returns the detected mood and confidence information.
 
 Example:
 
+🎭 Mood: Happy
+📊 Confidence: 94.72%
 
+07 — Select Matching Playlist
 
-Mood: Happy
+The detected emotional category is mapped to the corresponding music collection.
 
-Confidence: 94.72%
-
-
-
-Step 7 — Map Mood to Music
-
-
-
-The application maps the detected mood to the corresponding music collection.
-
-
-
-Happy
-
-&#x20; ↓
-
+😊 Happy
+   ↓
 Happy Playlist
+   ↓
+Bollywood + Haryanvi
 
-&#x20; ↓
+08 — Display Recommendations
 
-Bollywood + Haryanvi Songs
+The React interface updates the recommendation section dynamically.
 
+09 — Discover Music
 
-
-Step 8 — Display Recommendations
-
-
-
-The frontend updates the recommendation section with songs associated with the detected mood.
-
-
-
-Step 9 — Listen
-
-
-
-The user can select a recommendation and search for the song through the available external music platform.
-
-
+The user can select a song and search for it through the available external music platform.
 
 🏗️ System Architecture
 
-
-
-&#x20;                        ┌─────────────────┐
-
-&#x20;                        │      USER       │
-
-&#x20;                        └────────┬────────┘
-
-&#x20;                                 │
-
-&#x20;                                 ▼
-
-&#x20;                        ┌─────────────────┐
-
-&#x20;                        │ Browser Camera  │
-
-&#x20;                        └────────┬────────┘
-
-&#x20;                                 │
-
-&#x20;                                 ▼
-
-&#x20;             ┌─────────────────────────────────┐
-
-&#x20;             │          REACT FRONTEND         │
-
-&#x20;             │                                 │
-
-&#x20;             │  Camera Interface              │
-
-&#x20;             │  Mood Display                  │
-
-&#x20;             │  Confidence Display            │
-
-&#x20;             │  Music Recommendations         │
-
-&#x20;             └────────────────┬────────────────┘
-
-&#x20;                              │
-
-&#x20;                              │ HTTP Request
-
-&#x20;                              ▼
-
-&#x20;             ┌─────────────────────────────────┐
-
-&#x20;             │          FLASK BACKEND          │
-
-&#x20;             │                                 │
-
-&#x20;             │  REST API                      │
-
-&#x20;             │  Image Handling                │
-
-&#x20;             │  AI Processing                 │
-
-&#x20;             └────────────────┬────────────────┘
-
-&#x20;                              │
-
-&#x20;                              ▼
-
-&#x20;             ┌─────────────────────────────────┐
-
-&#x20;             │      COMPUTER VISION / AI      │
-
-&#x20;             │                                 │
-
-&#x20;             │  Face Detection                │
-
-&#x20;             │  Facial Processing             │
-
-&#x20;             │  Expression Recognition        │
-
-&#x20;             └────────────────┬────────────────┘
-
-&#x20;                              │
-
-&#x20;                              ▼
-
-&#x20;             ┌─────────────────────────────────┐
-
-&#x20;             │       MOOD CLASSIFICATION       │
-
-&#x20;             └────────────────┬────────────────┘
-
-&#x20;                              │
-
-&#x20;                              ▼
-
-&#x20;             ┌─────────────────────────────────┐
-
-&#x20;             │    MUSIC RECOMMENDATION ENGINE │
-
-&#x20;             │                                 │
-
-&#x20;             │ Mood → Playlist → Songs        │
-
-&#x20;             └────────────────┬────────────────┘
-
-&#x20;                              │
-
-&#x20;                              ▼
-
-&#x20;                    🎧 RECOMMENDATIONS
-
-
-
-📂 Project Structure
-
-
-
-MoodTuneAI/
-
-│
-
-├── backend/
-
-│   │
-
-│   ├── app.py
-
-│   ├── camera.py
-
-│   ├── emotion.py
-
-│   ├── music.py
-
-│   │
-
-│   └── models/
-
-│       ├── face\_detection\_yunet\_2023mar.onnx
-
-│       ├── face\_recognition\_sface\_2021dec.onnx
-
-│       └── facial\_expression\_recognition\_mobilefacenet\_2022july.onnx
-
-│
-
-├── frontend/
-
-│   │
-
-│   ├── public/
-
-│   │   ├── favicon.svg
-
-│   │   └── icons.svg
-
-│   │
-
-│   ├── src/
-
-│   │   ├── assets/
-
-│   │   │   ├── hero.png
-
-│   │   │   ├── react.svg
-
-│   │   │   └── vite.svg
-
-│   │   │
-
-│   │   ├── App.jsx
-
-│   │   ├── App.css
-
-│   │   ├── index.css
-
-│   │   └── main.jsx
-
-│   │
-
-│   ├── index.html
-
-│   ├── package.json
-
-│   ├── package-lock.json
-
-│   └── vite.config.js
-
-│
-
-├── .gitignore
-
-└── README.md
-
-
+                           👤 USER
+                              │
+                              ▼
+                     ┌─────────────────┐
+                     │ Browser Camera  │
+                     └────────┬────────┘
+                              │
+                              ▼
+              ┌─────────────────────────────┐
+              │       ⚛️ REACT FRONTEND      │
+              │                             │
+              │  • Camera Interface         │
+              │  • Mood Dashboard           │
+              │  • Confidence Display       │
+              │  • Playlist UI              │
+              └──────────────┬──────────────┘
+                             │
+                             │ HTTP / REST API
+                             ▼
+              ┌─────────────────────────────┐
+              │       🐍 FLASK BACKEND       │
+              │                             │
+              │  • Request Handling         │
+              │  • Image Processing         │
+              │  • Emotion Analysis         │
+              │  • Recommendation Logic     │
+              └──────────────┬──────────────┘
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │     🧠 AI / COMPUTER VISION │
+              │                             │
+              │  • Face Detection           │
+              │  • Face Processing          │
+              │  • Expression Recognition   │
+              └──────────────┬──────────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ 🎭 MOOD ENGINE  │
+                    └────────┬────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │ 🎵 MUSIC RECOMMENDER │
+                 └──────────┬────────────┘
+                            │
+                            ▼
+                   🎧 PERSONALIZED
+                      PLAYLIST
+
+🔁 Complete Application Flow
+
+┌──────────────┐
+│ Open Website │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ Start Camera │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ Capture Face │
+└──────┬───────┘
+       │
+       ▼
+┌────────────────┐
+│ AI Processing  │
+└──────┬─────────┘
+       │
+       ▼
+┌────────────────┐
+│ Mood Detected  │
+└──────┬─────────┘
+       │
+       ▼
+┌────────────────┐
+│ Mood Mapping   │
+└──────┬─────────┘
+       │
+       ▼
+┌────────────────┐
+│ Playlist Ready │
+└──────┬─────────┘
+       │
+       ▼
+┌────────────────┐
+│ Listen / Search│
+└────────────────┘
 
 🎵 Music Recommendation Engine
 
-
-
-The recommendation engine connects the detected emotional state with the project's music library.
-
-
-
-The basic logic is:
-
-
+The recommendation engine follows a simple mapping process:
 
 Detected Emotion
-
-&#x20;      ↓
-
+       ↓
 Mood Category
+       ↓
+Playlist Category
+       ↓
+Song Collection
+       ↓
+Recommended Songs
 
-&#x20;      ↓
+Example Mood Mapping
 
-Mood Playlist
+😊 HAPPY
+    ↓
+Energetic / Feel-Good
+    ↓
+Bollywood + Haryanvi
+    ↓
+Personalized Playlist
 
-&#x20;      ↓
+😢 SAD
+    ↓
+Emotional / Comforting
+    ↓
+Bollywood + Haryanvi
+    ↓
+Personalized Playlist
 
-Song Selection
+😠 ANGRY
+    ↓
+Powerful / High-Energy
+    ↓
+Bollywood + Haryanvi
+    ↓
+Personalized Playlist
 
-&#x20;      ↓
+😐 NEUTRAL
+    ↓
+Chill / Balanced
+    ↓
+Bollywood + Haryanvi
+    ↓
+Personalized Playlist
 
-Recommendation UI
+🇮🇳 Indian Music Focus
 
+MoodTune AI focuses on Indian music with two major categories.
 
+🎬 Bollywood
 
-Example Mapping
+Hindi songs across different emotional states, genres, and listening situations.
 
+🪕 Haryanvi
 
+Regional Haryanvi songs are included to make the recommendation experience more diverse and culturally relevant.
 
-Happy
+📚 280+ Song Library
 
-→ Happy Songs
-
-
-
-Sad
-
-→ Emotional Songs
-
-
-
-Angry
-
-→ High-Energy Songs
-
-
-
-Neutral
-
-→ Chill Songs
-
-
-
-Surprised
-
-→ Fun Songs
-
-
-
-Anxious
-
-→ Calm Songs
-
-
-
-Uncomfortable
-
-→ Soothing Songs
-
-
-
-The recommendation engine is designed to keep the application simple and responsive while providing multiple song choices for each mood.
-
-
-
-📚 Music Library
-
-
-
-MoodTune AI includes a 280+ song collection.
-
-
-
-The library is organized according to mood categories.
-
-
+The project contains 280+ songs distributed across mood categories.
 
 🎵 MUSIC LIBRARY
 
-
-
 ├── 😊 Happy
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 ├── 😢 Sad
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 ├── 😠 Angry
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 ├── 😐 Neutral
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 ├── 😲 Surprised
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 ├── 😟 Anxious
-
 │   ├── Bollywood
-
 │   └── Haryanvi
-
 │
-
 └── 😕 Uncomfortable
+    ├── Bollywood
+    └── Haryanvi
 
-&#x20;   ├── Bollywood
+📊 Example AI Result
 
-&#x20;   └── Haryanvi
+╔══════════════════════════════════╗
+║          CURRENT MOOD            ║
+║                                  ║
+║             😊 Happy             ║
+║                                  ║
+║          94.72% Confidence       ║
+╚══════════════════════════════════╝
 
+The detected mood is then used to update the recommendation section.
 
+🎧 Personalized Playlist
+
+The playlist section changes according to the detected mood.
+
+Example:
+
+😊 HAPPY PLAYLIST
+
+🎵 Song 01
+🎵 Song 02
+🎵 Song 03
+🎵 Song 04
+🎵 Song 05
+...
+🎵 Song 40
+
+The system can provide a larger set of mood-specific recommendations instead of relying on only a few static cards.
 
 🖼️ Screenshots
 
-
-
-The repository can contain a dedicated screenshots directory:
-
-
+Store project screenshots in:
 
 screenshots/
-
 ├── home.png
-
 ├── camera.png
-
 ├── mood-detection.png
+├── playlist.png
+└── how-it-works.png
 
-├── recommendations.png
+Then add them here.
 
-└── mobile-view.png
-
-
-
-🏠 Home Screen
+🏠 Home Page
 
 
 
-
-
-
-
-📷 Camera Interface
-
-
-
-
+📷 AI Camera
 
 
 
@@ -1270,1879 +536,1024 @@ screenshots/
 
 
 
+🎧 Personalized Playlist
 
 
 
-
-🎧 Music Recommendations
-
-
-
-
-
-
-
-📱 Responsive View
-
-
-
-
-
-
-
-Note: Add the actual screenshot files to the screenshots/ directory before using these image paths.
+⚙️ How It Works
 
 
 
 🎬 Demo
 
-
-
 🎥 Demo Flow
 
-
-
-A complete demonstration of MoodTune AI can follow this flow:
-
-
-
-1️⃣ Open MoodTune AI
-
-&#x20;       ↓
-
-2️⃣ Start Camera
-
-&#x20;       ↓
-
-3️⃣ Allow Camera Permission
-
-&#x20;       ↓
-
-4️⃣ Capture Facial Expression
-
-&#x20;       ↓
-
-5️⃣ Send Image to AI Backend
-
-&#x20;       ↓
-
-6️⃣ Detect Mood
-
-&#x20;       ↓
-
-7️⃣ Display Confidence Score
-
-&#x20;       ↓
-
-8️⃣ Generate Mood Playlist
-
-&#x20;       ↓
-
-9️⃣ Display Recommended Songs
-
-&#x20;       ↓
-
-🔟 Search / Play Selected Song
-
-
+🎵 Open MoodTune AI
+        ↓
+📷 Start Camera
+        ↓
+🔐 Allow Permission
+        ↓
+👤 Show Face
+        ↓
+🧠 AI Analyzes Expression
+        ↓
+🎭 Mood Detected
+        ↓
+📊 Confidence Displayed
+        ↓
+🎵 Playlist Automatically Updated
+        ↓
+🎧 Select Song
+        ↓
+▶️ Search / Play
 
 🌐 Live Demo
 
+🚧 Coming Soon
 
+Once deployed, add the production URL:
 
-Coming Soon
-
-
-
-Once the application is deployed, replace the above section with the live website URL.
-
-
-
-Example:
-
-
-
-https://your-moodtune-domain.com
-
-
+https://your-moodtune-demo.com
 
 📹 Demo Video
 
-
-
-A project demonstration video can showcase:
-
-
+The demo video can showcase:
 
 Project introduction
 
-
-
-Home screen
-
-
+Home interface
 
 Camera activation
 
-
-
 Camera permission
-
-
 
 Facial expression capture
 
-
-
-AI emotion detection
-
-
+AI mood detection
 
 Confidence score
 
+Automatic playlist generation
 
+Bollywood recommendations
 
-Mood-based playlist
+Haryanvi recommendations
 
-
-
-Song recommendations
-
-
-
-Music search
-
-
-
-Recommended demo structure:
-
-
-
-Introduction
-
-&#x20;    ↓
-
-Problem
-
-&#x20;    ↓
-
-MoodTune AI Solution
-
-&#x20;    ↓
-
-Live Demo
-
-&#x20;    ↓
-
-AI Detection
-
-&#x20;    ↓
-
-Music Recommendation
-
-&#x20;    ↓
-
-Technology Stack
-
-&#x20;    ↓
-
-Future Scope
-
-
+Song search
 
 🛠️ Technology Stack
 
-
-
 Frontend
-
-
 
 Technology
 
-
-
 Purpose
 
-
-
-React
-
-
+⚛️ React.js
 
 Interactive user interface
 
+⚡ Vite
 
+Frontend development and build
 
-Vite
-
-
-
-Development and build tooling
-
-
-
-JavaScript
-
-
+🟨 JavaScript
 
 Application logic
 
+🎨 CSS3
 
+Styling and responsive design
 
-CSS
+📷 Browser Camera API
 
-
-
-Styling and layout
-
-
-
-Browser Camera API
-
-
-
-Camera interaction
-
-
+Camera access
 
 Backend
-
-
 
 Technology
 
-
-
 Purpose
 
-
-
-Python
-
-
+🐍 Python
 
 Backend and AI programming
 
-
-
-Flask
-
-
+🌶️ Flask
 
 REST API
 
+🔗 Flask-CORS
 
+Cross-origin communication
 
-Flask-CORS
-
-
-
-Frontend-backend communication
-
-
-
-OpenCV
-
-
+👁️ OpenCV
 
 Computer vision
 
-
-
-NumPy
-
-
+🔢 NumPy
 
 Numerical and image processing
 
-
-
 AI / Computer Vision
-
-
 
 Component
 
-
-
 Purpose
 
+👤 Face Detection
 
+Locate faces
 
-Face Detection
-
-
-
-Detect faces in captured images
-
-
-
-Facial Processing
-
-
-
-Prepare face information
-
-
-
-Expression Recognition
-
-
+🧠 Expression Recognition
 
 Analyze facial expression
 
-
-
-ONNX Models
-
-
+📦 ONNX Models
 
 Model inference
 
+🎭 Emotion Classification
 
-
-Emotion Classification
-
-
-
-Determine emotional category
-
-
+Determine emotional state
 
 🔌 API Documentation
 
+The frontend communicates with the Flask backend through REST endpoints.
 
+GET /
 
-MoodTune AI uses a Flask REST API to connect the React frontend with the backend AI pipeline.
+Purpose
 
+Checks whether the backend is running.
 
+Local URL
+
+http://localhost:5000/
+
+GET /api/health
+
+Purpose
+
+Provides a basic backend health check.
+
+Local URL
+
+http://localhost:5000/api/health
 
 POST /api/detect-mood
 
+Purpose
 
-
-Detects a mood from an uploaded facial image.
-
-
+Receives an image from the frontend and performs mood detection.
 
 Endpoint
 
-
-
 POST http://localhost:5000/api/detect-mood
-
-
 
 Content Type
 
-
-
 multipart/form-data
-
-
 
 Request Parameter
 
-
-
 Parameter
 
-
-
 Type
-
-
 
 Required
 
-
-
 Description
-
-
 
 image
 
-
-
 File
 
-
-
-Yes
-
-
+✅ Yes
 
 Captured facial image
 
-
-
-Example Request
-
-
+Example Frontend Request
 
 const formData = new FormData();
 
-
-
 formData.append(
-
-&#x20; "image",
-
-&#x20; blob,
-
-&#x20; "mood-capture.jpg"
-
+  "image",
+  blob,
+  "mood-capture.jpg"
 );
-
-
 
 const response = await fetch(
-
-&#x20; "http://localhost:5000/api/detect-mood",
-
-&#x20; {
-
-&#x20;   method: "POST",
-
-&#x20;   body: formData
-
-&#x20; }
-
+  "http://localhost:5000/api/detect-mood",
+  {
+    method: "POST",
+    body: formData
+  }
 );
-
-
 
 const data = await response.json();
 
-
-
 Example Successful Response
 
-
-
 {
-
-&#x20; "success": true,
-
-&#x20; "mood": "Happy",
-
-&#x20; "confidence": 94.72,
-
-&#x20; "songs": \[
-
-&#x20;   {
-
-&#x20;     "title": "Example Song",
-
-&#x20;     "artist": "Example Artist"
-
-&#x20;   }
-
-&#x20; ]
-
+  "success": true,
+  "mood": "Happy",
+  "emotion": "happy",
+  "confidence": 94.72,
+  "songs": [
+    {
+      "title": "Example Song",
+      "artist": "Example Artist",
+      "emoji": "😊"
+    }
+  ]
 }
-
-
 
 Response Fields
 
-
-
 Field
-
-
 
 Type
 
-
-
 Description
-
-
 
 success
 
-
-
 Boolean
 
-
-
-Indicates whether the request succeeded
-
-
+Request status
 
 mood
 
+String
 
+User-friendly detected mood
+
+emotion
 
 String
 
-
-
-Detected mood
-
-
+Detected emotion category
 
 confidence
 
-
-
 Number
 
-
-
-AI confidence score
-
-
+Prediction confidence
 
 songs
 
-
-
 Array
 
-
-
-Recommended songs
-
-
+Mood-based recommendations
 
 Example Error Response
 
-
-
 {
-
-&#x20; "success": false,
-
-&#x20; "error": "Mood detection failed."
-
+  "success": false,
+  "error": "Mood detection failed",
+  "message": "Unable to process image"
 }
 
+📂 Project Structure
 
+MoodTuneAI/
+│
+├── README.md
+├── .gitignore
+│
+├── backend/
+│   ├── app.py
+│   ├── camera.py
+│   ├── emotion.py
+│   ├── music.py
+│   │
+│   └── models/
+│       ├── face_detection_yunet_2023mar.onnx
+│       ├── face_recognition_sface_2021dec.onnx
+│       └── facial_expression_recognition_mobilefacenet_2022july.onnx
+│
+├── frontend/
+│   ├── public/
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── main.jsx
+│   │
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+└── screenshots/
+    ├── home.png
+    ├── camera.png
+    ├── mood-detection.png
+    ├── playlist.png
+    └── how-it-works.png
 
 🚀 Installation
 
+📋 Prerequisites
 
-
-Prerequisites
-
-
-
-Make sure the following are installed:
-
-
+Before running MoodTune AI, install:
 
 Python 3.x
 
-
-
 Node.js
-
-
 
 npm
 
-
-
 Git
 
-
-
-Modern web browser
-
-
+Modern browser
 
 Camera-enabled device
 
-
-
-1️⃣ Clone Repository
-
-
+1️⃣ Clone the Repository
 
 git clone https://github.com/riyagarg3729/MoodTuneAI.git
 
-
-
-Then:
-
-
-
 cd MoodTuneAI
 
-
-
-2️⃣ Backend Setup
-
-
+🐍 Backend Setup
 
 Navigate to the backend:
 
-
-
 cd backend
 
-
-
-Create a Python virtual environment:
-
-
+Create a virtual environment:
 
 python -m venv venv
 
-
-
 Activate it on Windows:
 
+venv\Scripts\activate
 
-
-venv\\Scripts\\activate
-
-
-
-Install dependencies:
-
-
+Install backend dependencies:
 
 pip install flask flask-cors opencv-python numpy
 
+If the project contains a requirements.txt:
 
+pip install -r requirements.txt
 
-Start the backend:
-
-
+Start Flask:
 
 python app.py
 
-
-
-The backend should run at:
-
-
+Backend:
 
 http://localhost:5000
 
-
-
-3️⃣ Frontend Setup
-
-
+⚛️ Frontend Setup
 
 Open a second terminal.
 
-
-
 Navigate to the frontend:
 
-
-
 cd MoodTuneAI/frontend
-
-
 
 Install dependencies:
 
-
-
 npm install
 
-
-
-Start the Vite development server:
-
-
+Start the frontend:
 
 npm run dev
 
-
-
-Open the URL shown in the terminal.
-
-
+Vite will show the local development URL.
 
 Example:
-
-
 
 http://localhost:5173
 
+▶️ Run the Complete Application
 
-
-▶️ Running The Complete Application
-
-
-
-MoodTune AI requires the backend and frontend to run simultaneously.
-
-
+Two terminals are required.
 
 Terminal 1 — Backend
 
-
-
 cd MoodTuneAI/backend
-
-venv\\Scripts\\activate
-
+venv\Scripts\activate
 python app.py
-
-
 
 Terminal 2 — Frontend
 
-
-
 cd MoodTuneAI/frontend
-
 npm run dev
 
+Then open the frontend URL displayed by Vite.
 
+🖥️ Local Architecture
 
-Then open the frontend URL in your browser.
-
-
-
-🖥️ Local Development Architecture
-
-
-
-&#x20;            Browser
-
-&#x20;               │
-
-&#x20;               ▼
-
-&#x20;      ┌─────────────────┐
-
-&#x20;      │ React + Vite    │
-
-&#x20;      │ localhost:5173  │
-
-&#x20;      └────────┬────────┘
-
-&#x20;               │
-
-&#x20;               │ HTTP API
-
-&#x20;               ▼
-
-&#x20;      ┌─────────────────┐
-
-&#x20;      │ Flask Backend   │
-
-&#x20;      │ localhost:5000  │
-
-&#x20;      └────────┬────────┘
-
-&#x20;               │
-
-&#x20;               ▼
-
-&#x20;      ┌─────────────────┐
-
-&#x20;      │ OpenCV + AI     │
-
-&#x20;      │ Model Pipeline  │
-
-&#x20;      └────────┬────────┘
-
-&#x20;               │
-
-&#x20;               ▼
-
-&#x20;         Mood Detection
-
-&#x20;               │
-
-&#x20;               ▼
-
-&#x20;     Music Recommendation
-
-
+             🌐 Browser
+                  │
+                  ▼
+        ┌───────────────────┐
+        │ React + Vite      │
+        │ localhost:5173    │
+        └─────────┬─────────┘
+                  │
+                  │ HTTP
+                  ▼
+        ┌───────────────────┐
+        │ Flask Backend     │
+        │ localhost:5000    │
+        └─────────┬─────────┘
+                  │
+                  ▼
+        ┌───────────────────┐
+        │ OpenCV + AI Models│
+        └─────────┬─────────┘
+                  │
+                  ▼
+             🎭 Mood
+                  │
+                  ▼
+             🎵 Playlist
 
 ⚙️ Configuration
 
-
-
-During local development, the frontend communicates with the Flask backend through the local backend URL.
-
-
-
-Example:
-
-
-
-const API\_URL =
-
-&#x20; import.meta.env.VITE\_API\_URL ||
-
-&#x20; "http://localhost:5000";
-
-
-
-API call:
-
-
-
-fetch(`${API\_URL}/api/detect-mood`, {
-
-&#x20; method: "POST",
-
-&#x20; body: formData
-
-});
-
-
-
-For production, use an environment variable instead of hard-coding the backend address.
-
-
-
-Example .env:
-
-
-
-VITE\_API\_URL=https://your-backend-domain.com
-
-
-
-☁️ Deployment
-
-
-
-MoodTune AI can be deployed using a separate frontend and backend architecture.
-
-
-
-Frontend
-
-
-
-React + Vite
-
-&#x20;     ↓
-
-Production Build
-
-&#x20;     ↓
-
-Static Hosting
-
-
-
-Backend
-
-
-
-Python + Flask
-
-&#x20;     ↓
-
-Production Server
-
-&#x20;     ↓
-
-REST API
-
-
-
-Production Architecture
-
-
-
-&#x20;                   INTERNET
-
-&#x20;                      │
-
-&#x20;           ┌──────────┴──────────┐
-
-&#x20;           │                     │
-
-&#x20;           ▼                     ▼
-
-&#x20;    Frontend Hosting       Flask Backend
-
-&#x20;           │                     │
-
-&#x20;           │                     ▼
-
-&#x20;           │              AI / OpenCV
-
-&#x20;           │                     │
-
-&#x20;           └──────────┬──────────┘
-
-&#x20;                      ▼
-
-&#x20;              Mood Recommendation
-
-
-
-For production deployment, remember to configure:
-
-
-
-HTTPS
-
-
-
-Backend URL
-
-
-
-CORS
-
-
-
-Environment variables
-
-
-
-Production server
-
-
-
-Camera permissions
-
-
-
-Secure API configuration
-
-
-
-🔐 Privacy
-
-
-
-MoodTune AI requires camera access only when the user chooses to use the mood detection feature.
-
-
-
-Camera access is controlled through browser permissions.
-
-
-
-During local development, the captured image can be sent to the local Flask backend for analysis.
-
-
-
-The project should be deployed with appropriate privacy and data-handling practices if used with real users.
-
-
-
-🛡️ Security Considerations
-
-
-
-For production deployment, consider implementing:
-
-
-
-HTTPS
-
-
-
-Secure environment variables
-
-
-
-Restricted CORS configuration
-
-
-
-Input validation
-
-
-
-Image-type validation
-
-
-
-File-size restrictions
-
-
-
-Rate limiting
-
-
-
-Secure error handling
-
-
-
-Proper logging
-
-
-
-Protection of API endpoints
-
-
-
-📊 Project Highlights
-
-
-
-Category
-
-
-
-Implementation
-
-
-
-🤖 Artificial Intelligence
-
-
-
-Facial Emotion Recognition
-
-
-
-📷 Computer Vision
-
-
-
-Camera + Face Processing
-
-
-
-⚛️ Frontend
-
-
-
-React + Vite
-
-
-
-🐍 Backend
-
-
-
-Python + Flask
-
-
-
-🔌 Communication
-
-
-
-REST API
-
-
-
-🎭 Mood Categories
-
-
-
-7
-
-
-
-🎵 Music Library
-
-
-
-280+ Songs
-
-
-
-🇮🇳 Music
-
-
-
-Bollywood + Haryanvi
-
-
-
-📊 AI Output
-
-
-
-Mood + Confidence
-
-
-
-🎧 Recommendation
-
-
-
-Mood-Based Playlist
-
-
-
-▶️ Music Access
-
-
-
-External Search
-
-
-
-💼 Resume-Friendly Project Description
-
-
-
-MoodTune AI — AI-Powered Mood-Based Music Recommendation System
-
-
-
-Tech Stack: React, Vite, Python, Flask, OpenCV, ONNX, REST API
-
-
-
-Resume Points
-
-
-
-Developed an AI-powered full-stack web application using React, Vite, Python, and Flask to detect facial emotions and generate mood-based music recommendations.
-
-
-
-Integrated computer vision and facial-expression recognition with a browser-based camera interface to classify user moods and display AI confidence scores.
-
-
-
-Built a 280+ song Bollywood and Haryanvi music library with mood-specific recommendation logic and external music search functionality.
-
-
-
-Designed a REST API-based frontend-backend architecture for image processing, emotion inference, mood classification, and personalized recommendation delivery.
-
-
-
-🏆 Why This Project Stands Out
-
-
-
-MoodTune AI combines multiple areas of software engineering and AI in one working application.
-
-
-
-🌐 Web Development
-
-
-
-React
-
-&#x20;↓
-
-Interactive UI
-
-&#x20;↓
-
-Camera Interface
-
-&#x20;↓
-
-Dynamic Recommendations
-
-
-
-🐍 Backend Development
-
-
-
-Python
-
-&#x20;↓
-
-Flask
-
-&#x20;↓
-
-REST API
-
-&#x20;↓
-
-Image Processing
-
-
-
-🤖 AI / Computer Vision
-
-
-
-Face
-
-&#x20;↓
-
-Expression
-
-&#x20;↓
-
-Emotion
-
-&#x20;↓
-
-Mood
-
-
-
-🎵 Recommendation System
-
-
-
-Mood
-
-&#x20;↓
-
-Playlist Category
-
-&#x20;↓
-
-Song Collection
-
-&#x20;↓
-
-Recommendation
-
-
-
-Therefore, the project demonstrates:
-
-
-
-Full-Stack Development + Artificial Intelligence + Computer Vision + Recommendation Systems
-
-
-
-📚 Learning Outcomes
-
-
-
-Developing MoodTune AI provides practical experience with:
-
-
-
-React development
-
-
-
-Vite workflow
-
-
-
-Python programming
-
-
-
-Flask REST APIs
-
-
-
-Frontend-backend integration
-
-
-
-Browser camera APIs
-
-
-
-Image processing
-
-
-
-OpenCV
-
-
-
-ONNX model integration
-
-
-
-Facial expression recognition
-
-
-
-JSON communication
-
-
-
-Git and GitHub
-
-
-
-Project architecture
-
-
-
-API design
-
-
-
-Responsive UI development
-
-
-
-Deployment concepts
-
-
-
-🧩 Challenges Solved
-
-
-
-Challenge 1 — Camera Integration
-
-
-
-Connecting the browser camera with the React interface.
-
-
-
-Challenge 2 — Image Transfer
-
-
-
-Sending captured image data from the frontend to Flask.
-
-
-
-Challenge 3 — AI Processing
-
-
-
-Processing the captured image through computer-vision models.
-
-
-
-Challenge 4 — Mood Mapping
-
-
-
-Converting detected emotions into usable music categories.
-
-
-
-Challenge 5 — Music Recommendation
-
-
-
-Connecting mood categories with a large music collection.
-
-
-
-Challenge 6 — User Experience
-
-
-
-Presenting AI results and recommendations in a clear and interactive interface.
-
-
-
-Challenge 7 — Full-Stack Integration
-
-
-
-Connecting the React frontend, Flask backend, AI processing, and recommendation engine into one workflow.
-
-
-
-🔮 Future Enhancements
-
-
-
-🎧 Spotify Integration
-
-
-
-Integrate Spotify APIs for richer music discovery and playlist generation.
-
-
-
-▶️ YouTube Music Integration
-
-
-
-Provide deeper integration with external music platforms.
-
-
-
-🧠 Advanced Emotion Models
-
-
-
-Improve recognition performance using more advanced deep-learning models and larger datasets.
-
-
-
-👥 Multi-Face Detection
-
-
-
-Support multiple faces and generate group-level mood insights.
-
-
-
-📈 Mood History
-
-
-
-Allow users to track mood patterns over time.
-
-
-
-Example:
-
-
-
-Monday       😊 Happy
-
-Tuesday      😐 Neutral
-
-Wednesday    😢 Sad
-
-Thursday     😊 Happy
-
-Friday       😲 Surprised
-
-
-
-❤️ Personal Preferences
-
-
-
-Allow users to select:
-
-
-
-Favorite artists
-
-
-
-Favorite genres
-
-
-
-Preferred languages
-
-
-
-Bollywood preference
-
-
-
-Haryanvi preference
-
-
-
-Future recommendations could combine:
-
-
-
-Detected Mood
-
-&#x20;     +
-
-User Preferences
-
-&#x20;     +
-
-Listening History
-
-&#x20;     =
-
-Advanced Personalization
-
-
-
-📱 Mobile Application
-
-
-
-Build Android and iOS versions using:
-
-
-
-React Native
-
-&#x20;       or
-
-Flutter
-
-
-
-☁️ Cloud AI Inference
-
-
-
-Deploy the AI inference pipeline as a scalable cloud service.
-
-
-
-🎙️ Voice-Based Mood Input
-
-
-
-Allow users to optionally describe their mood through voice or text and combine that information with facial-expression analysis.
-
-
-
-🧪 Example User Journey
-
-
-
-Imagine a user opens MoodTune AI after a long day.
-
-
-
-The user starts the camera.
-
-
-
-Camera
-
-&#x20; ↓
-
-Facial Expression
-
-&#x20; ↓
-
-AI Analysis
-
-
-
-The system detects:
-
-
-
-😊 HAPPY
-
-Confidence: 94%
-
-
-
-The application then selects:
-
-
-
-Happy Playlist
-
-&#x20;     ↓
-
-Bollywood + Haryanvi
-
-&#x20;     ↓
-
-Recommended Songs
-
-
-
-The user can select a recommendation and search for the song.
-
-
-
-This demonstrates the complete:
-
-
-
-INPUT → AI → DECISION → RECOMMENDATION
-
-
-
-pipeline.
-
-
-
-🐛 Troubleshooting
-
-
-
-npm run dev Shows Port Already in Use
-
-
-
-Vite automatically attempts another available port.
-
-
-
-Example:
-
-
-
-Port 5173 is in use.
-
-Port 5174 is in use.
-
-
-
-Local: http://localhost:5175/
-
-
-
-Open the URL shown in the terminal.
-
-
-
-Camera Does Not Open
-
-
-
-Check:
-
-
-
-Browser camera permission
-
-
-
-Camera availability
-
-
-
-Whether another application is using the camera
-
-
-
-Browser security settings
-
-
-
-HTTPS when deployed
-
-
-
-Backend Connection Error
-
-
-
-Make sure the Flask backend is running:
-
-
-
-python app.py
-
-
-
-Then verify:
-
-
+During development, the frontend communicates with:
 
 http://localhost:5000
 
+For production, the backend URL should be configurable.
 
+Example:
 
-Also verify that the frontend is using the correct API URL.
-
-
-
-Frontend Dependencies Are Missing
-
-
-
-Run:
-
-
-
-cd frontend
-
-npm install
-
-npm run dev
-
-
-
-Python Dependencies Are Missing
-
-
-
-Activate the virtual environment:
-
-
-
-venv\\Scripts\\activate
-
-
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "http://localhost:5000";
 
 Then:
 
+fetch(`${API_URL}/api/detect-mood`, {
+  method: "POST",
+  body: formData
+});
 
+Example production environment variable:
 
-pip install flask flask-cors opencv-python numpy
+VITE_API_URL=https://your-backend-domain.com
 
+☁️ Deployment
 
+MoodTune AI can be deployed using separate frontend and backend hosting.
+
+                    🌐 INTERNET
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+      ⚛️ FRONTEND              🐍 BACKEND
+      React + Vite                Flask
+              │                     │
+              │                     ▼
+              │                🧠 AI Models
+              │                     │
+              └──────────┬──────────┘
+                         ▼
+                🎵 Recommendations
+
+For production deployment, configure:
+
+HTTPS
+
+Production API URL
+
+CORS
+
+Environment variables
+
+Secure model/configuration handling
+
+Camera permissions
+
+Production server
+
+🔐 Privacy
+
+MoodTune AI requires camera permission only when the user chooses to use the mood-detection feature.
+
+During local development, the captured image is processed through the local Flask backend.
+
+For production deployment, the application should implement clear privacy practices, secure data handling, and appropriate consent.
+
+🛡️ Security Considerations
+
+For production use, consider:
+
+HTTPS
+
+Restricted CORS
+
+Image validation
+
+File-size restrictions
+
+Rate limiting
+
+Secure environment variables
+
+Input sanitization
+
+Safe error handling
+
+Avoiding unnecessary image storage
+
+Proper authentication where needed
+
+🐛 Troubleshooting
+
+npm run dev shows "port already in use"
+
+Vite may automatically select another port.
+
+Example:
+
+Port 5173 is in use.
+Port 5174 is in use.
+
+Local: http://localhost:5175/
+
+Open the URL shown by Vite.
+
+📷 Camera is not opening
+
+Check:
+
+Camera permission is allowed.
+
+Camera is connected.
+
+Another application is not using the camera.
+
+Browser supports camera access.
+
+Production deployment uses HTTPS.
+
+❌ Backend connection error
+
+Make sure Flask is running:
+
+python app.py
+
+Verify:
+
+http://localhost:5000/
+
+Then check the frontend API URL.
+
+🧠 Mood detection fails
+
+Check:
+
+The backend is running.
+
+AI model files exist.
+
+Camera frame is available.
+
+Face is clearly visible.
+
+The captured image is valid.
+
+Frontend and backend URLs match.
+
+💼 Resume-Friendly Project Description
+
+MoodTune AI — AI-Powered Mood-Based Music Recommendation System
+
+Tech Stack: React.js, Vite, Python, Flask, OpenCV, ONNX, REST API
+
+Resume Highlights
+
+Developed an AI-powered full-stack web application using React, Vite, Python, Flask, and OpenCV to analyze facial expressions and recommend mood-based music.
+
+Implemented a computer-vision emotion detection pipeline with browser camera integration, facial-expression analysis, emotion classification, and confidence-score visualization.
+
+Built a 280+ song Bollywood and Haryanvi recommendation library with dynamic mood-specific playlist selection and external music search functionality.
+
+Designed a REST API-based frontend-backend architecture for image processing, emotion inference, mood classification, and personalized recommendation delivery.
+
+🏆 Technical Highlights
+
+Area
+
+Skills Demonstrated
+
+🤖 Artificial Intelligence
+
+Emotion Recognition
+
+👁️ Computer Vision
+
+Face Detection & Image Processing
+
+⚛️ Frontend
+
+React + Vite
+
+🐍 Backend
+
+Python + Flask
+
+🔌 APIs
+
+REST API Integration
+
+🧠 Models
+
+ONNX Model Integration
+
+🎵 Recommendation
+
+Mood-Based Playlist Engine
+
+🇮🇳 Music
+
+Bollywood + Haryanvi
+
+🎧 Content
+
+280+ Songs
+
+📊 AI Output
+
+Mood + Confidence
+
+🔧 Development
+
+Git + GitHub
+
+🌐 Product
+
+Full-Stack Web Application
+
+🎯 Skills Demonstrated
+
+Artificial Intelligence
+Computer Vision
+Facial Expression Recognition
+Machine Learning Integration
+Python
+Flask
+React.js
+Vite
+JavaScript
+HTML5
+CSS3
+REST APIs
+OpenCV
+ONNX
+Image Processing
+API Integration
+Frontend Development
+Backend Development
+Git
+GitHub
+Responsive Web Design
+Debugging
+
+🧩 Challenges Solved
+
+📷 Camera Integration
+
+Connected browser camera functionality with React while managing camera permissions and stream lifecycle.
+
+🖼️ Image Processing
+
+Captured camera frames and prepared image data for backend processing.
+
+🔌 Frontend–Backend Integration
+
+Connected the React interface with Flask through REST API communication.
+
+🧠 AI Integration
+
+Integrated facial-analysis model assets into the backend processing pipeline.
+
+🎭 Mood Mapping
+
+Converted detected emotional categories into useful music categories.
+
+🎵 Recommendation Logic
+
+Mapped moods to curated music collections containing Bollywood and Haryanvi songs.
+
+🎨 User Experience
+
+Created a clear interface that allows users to understand the complete AI workflow without technical knowledge.
+
+📚 Learning Outcomes
+
+Through the development of MoodTune AI, practical experience was gained in:
+
+Full-stack application development
+
+React component development
+
+Flask backend development
+
+REST API communication
+
+Computer vision
+
+Facial-expression recognition
+
+AI model integration
+
+Image processing
+
+Browser camera APIs
+
+Dynamic UI rendering
+
+Git and GitHub
+
+Debugging
+
+Application architecture
+
+Deployment preparation
+
+🔮 Future Enhancements
+
+🎧 Spotify Integration
+
+Create and manage personalized playlists through Spotify APIs.
+
+▶️ YouTube Music Integration
+
+Improve external music integration and playback workflows.
+
+🧠 Advanced Emotion Models
+
+Use newer and more accurate emotion-recognition models.
+
+👥 Multi-Face Detection
+
+Analyze multiple faces and determine group mood.
+
+📈 Mood History
+
+Track and visualize mood patterns over time.
+
+Example:
+
+Monday      😊 Happy
+Tuesday     😐 Neutral
+Wednesday   😢 Sad
+Thursday    😊 Happy
+Friday      😲 Surprised
+
+❤️ Personal Preferences
+
+Combine mood with:
+
+Favorite artists
+
+Favorite genres
+
+Preferred language
+
+Listening history
+
+Bollywood/Haryanvi preference
+
+Future recommendation formula:
+
+Detected Mood
+      +
+User Preferences
+      +
+Listening History
+      ↓
+Advanced Personalized Recommendation
+
+📱 Mobile Application
+
+Build dedicated Android/iOS versions.
+
+☁️ Cloud AI Inference
+
+Deploy the AI processing layer as a scalable cloud service.
+
+🎙️ Voice + Emotion
+
+Combine facial expression with optional voice/text-based mood input.
+
+🛣️ Development Roadmap
+
+✅ Completed
+
+React frontend
+
+Vite development setup
+
+Flask backend
+
+Browser camera integration
+
+Face detection pipeline
+
+Facial-expression recognition
+
+Mood classification
+
+Confidence score display
+
+Mood-based recommendations
+
+Bollywood music library
+
+Haryanvi music library
+
+280+ song collection
+
+External music search
+
+GitHub repository
+
+🔜 Planned
+
+Production deployment
+
+Spotify integration
+
+User accounts
+
+Mood history
+
+Advanced recommendation engine
+
+Mobile application
+
+Improved AI accuracy
+
+Real-time recommendation updates
+
+🧪 Example User Journey
+
+Imagine a user opens MoodTune AI after a long day.
+
+👤 User
+   ↓
+📷 Starts Camera
+   ↓
+🙂 Shows Expression
+   ↓
+🧠 AI Analyzes Face
+   ↓
+🎭 Mood Detected
+   ↓
+📊 Confidence Score
+   ↓
+🎵 Matching Playlist
+   ↓
+🎧 Music Recommendation
+
+The entire experience is designed around:
+
+INPUT → AI → DECISION → RECOMMENDATION
+
+🌈 Product Vision
+
+MoodTune AI can evolve from a simple mood-based recommendation application into a broader emotion-aware music assistant.
+
+A future intelligent recommendation engine could combine:
+
+              Facial Emotion
+                    +
+             Listening History
+                    +
+             User Preferences
+                    +
+               Time of Day
+                    +
+              Music Feedback
+                    ↓
+          🧠 Smart Recommendation
+                    ↓
+               🎧 Playlist
+
+The long-term goal is to make music discovery more contextual, adaptive, and personalized.
 
 🤝 Contributing
 
-
-
 Contributions are welcome.
 
+1. Fork the Repository
 
+Create your own fork.
 
-1\. Fork the repository
+2. Clone It
 
+git clone https://github.com/riyagarg3729/MoodTuneAI.git
 
-
-Create your own copy of the project.
-
-
-
-2\. Create a feature branch
-
-
+3. Create a Branch
 
 git checkout -b feature/new-feature
 
+4. Make Changes
 
+Implement and test your improvements.
 
-3\. Make your changes
-
-
-
-Implement and test your feature.
-
-
-
-4\. Commit
-
-
+5. Commit
 
 git add .
-
 git commit -m "Add new feature"
 
-
-
-5\. Push
-
-
+6. Push
 
 git push origin feature/new-feature
 
+7. Pull Request
 
-
-6\. Open a Pull Request
-
-
-
-Describe your changes and submit the pull request.
-
-
+Open a Pull Request with a clear description of your changes.
 
 ⭐ Support
 
-
-
 If you like MoodTune AI, consider supporting the project:
 
-
-
 ⭐ Star the repository
-
 🍴 Fork the project
-
 🐛 Report bugs
-
-💡 Suggest features
-
-🔧 Contribute improvements
-
-
+💡 Suggest improvements
+🔧 Contribute features
 
 🔗 Repository
 
-
-
 GitHub
-
-
 
 MoodTune AI
 
-
-
 https://github.com/riyagarg3729/MoodTuneAI
-
-
 
 👩‍💻 Author
 
-
-
 Riya Garg
 
+Engineering Student | AI & Web Development Enthusiast
 
+Interested in:
 
-Engineering Student | AI \& Web Development Enthusiast
+Artificial Intelligence
 
+Machine Learning
 
+Computer Vision
+
+Full-Stack Development
+
+Automation
+
+Innovative Software Solutions
 
 GitHub
 
-
-
 https://github.com/riyagarg3729
-
-
 
 📄 License
 
+This project is intended for:
 
+Educational purposes
 
-This project is developed for educational, learning, portfolio, and project demonstration purposes.
+Portfolio demonstration
 
+Learning
 
+AI experimentation
 
-Music metadata and external music-search links are intended for recommendation purposes. Actual music playback is handled by the respective external music platforms and remains subject to their terms and policies.
+Full-stack development practice
 
-
-
-🎵 MoodTune AI
-
-
-
-<p align="center">
-
-
-
-🎭 Your Mood. Your Music.
-
-
-
-Detect → Understand → Recommend → Listen
-
-
-
-</p>
-
-
+Music metadata and external music-search links are used for recommendation purposes. Actual music playback is handled by the respective external platform and remains subject to its terms and policies.
 
 <p align="center">
-
-
-
-🎭 → 🧠 → 🎵 → 🎧
-
-
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7C4DFF&height=120&section=footer" width="100%" />
 </p>
-
-
 
 <p align="center">
-
-
-
-<strong>Made with ❤️ using React, Python, Flask, OpenCV \& AI</strong>
-
-
-
+  <strong>🎵 MoodTune AI</strong>
 </p>
-
-
 
 <p align="center">
-
-
-
-⭐ <strong>If you like MoodTune AI, star the repository!</strong> ⭐
-
-
-
+  <strong>Your Mood. Your Music.</strong>
 </p>
 
+<p align="center">
+  🎭 Detect &nbsp; • &nbsp; 🧠 Understand &nbsp; • &nbsp; 🎵 Recommend &nbsp; • &nbsp; 🎧 Enjoy
+</p>
+
+<p align="center">
+  Made with ❤️ using React • Python • Flask • OpenCV • AI
+</p>
