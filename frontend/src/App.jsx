@@ -905,7 +905,7 @@ function App() {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/detect-mood",
+            "https://moodtune-ai-backend.onrender.com/api/detect-mood",
             {
               method: "POST",
               body: formData
